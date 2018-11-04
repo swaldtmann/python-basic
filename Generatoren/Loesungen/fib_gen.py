@@ -13,9 +13,17 @@ def fib(n):
         zaehler += 1
 
 
-f = fib(15)
+if (__name__ == '__main__'):
 
-for x in f:
-    print(x, " ", end="")
+    anzahl = 15
 
-print()
+    import sys
+    if len(sys.argv) > 1:
+        anzahl = int(sys.argv[1])
+
+    f = fib(anzahl)
+
+    for x in f:
+        print(x, " ", end="")
+
+    print()
