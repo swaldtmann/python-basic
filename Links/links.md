@@ -1,0 +1,2 @@
+# Linkliste python-basic
+
