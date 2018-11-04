@@ -17,12 +17,12 @@ s = "Zeichenkette"
 print(s)
 
 # List
-l = ["Äpfel", "Birnen", "Pflaumen"]
-print(l)
+li = ["Äpfel", "Birnen", "Pflaumen"]
+print(li)
 
 # Tupel
 t = ("t", "wie", "Tupel")
-print (t)
+print(t)
 
 # Sets
 se = {'Rhein', 'Main', 'Werra', 'Weser'}

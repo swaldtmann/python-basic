@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def f(): 
+
+def f():
     s = "Perl"
-    print(s) 
+    print(s)
 
 
 s = "Python"
 f()
 print(s)
-

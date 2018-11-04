@@ -23,12 +23,16 @@ print()
 for i in range(26):
     if absolute_haeufigkeit[i] == 0:
         print(chr(a_ASCII + i) + " taucht nicht auf!\t\t" +
-              "{0: >6.3f}".format(absolute_haeufigkeit[i]/anz_buchstaben) + "%")
+              "{0: >6.3f}".format(absolute_haeufigkeit[i]/anz_buchstaben) +
+              "%")
     elif absolute_haeufigkeit[i] == 1:
         print(chr(a_ASCII + i) + " taucht 1 Mal auf:\t" +
-              "{0: >6.3f}".format(absolute_haeufigkeit[i]/anz_buchstaben) + "%")
+              "{0: >6.3f}".format(absolute_haeufigkeit[i]/anz_buchstaben) +
+              "%")
     else:
-        print(chr(a_ASCII + i) + " taucht " + str(absolute_haeufigkeit[i]) + " Mal auf:\t" +
-              "{0: >6.3f}".format(100*absolute_haeufigkeit[i]/anz_buchstaben) + "%")
+        print(chr(a_ASCII + i) + " taucht " + str(absolute_haeufigkeit[i]) +
+              " Mal auf:\t" +
+              "{0: >6.3f}".format(100*absolute_haeufigkeit[i]/anz_buchstaben) +
+              "%")
 
 print("\nGesamtzahl der Buchstaben:", anz_buchstaben)

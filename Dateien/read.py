@@ -6,4 +6,3 @@ for line in fobj:
     # Ausgabe aller Zeilen, ohne Leerzeichen am Ende der Zeile
     print(line.rstrip())
 fobj.close()
-

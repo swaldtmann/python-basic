@@ -6,7 +6,7 @@ import random
 n = 10
 
 zu_findende_zahl = int(n * random.random()) + 1
-print(zu_findende_zahl) # Debug Ausgabe
+print(zu_findende_zahl)  # Debug Ausgabe
 
 versuch = ''
 

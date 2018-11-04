@@ -8,4 +8,3 @@ for y in [3, 0, 1]:
     except:
         z = None
     print("z: ", z)
-
