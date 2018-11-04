@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+Author:
+"""
 
 
-morse_char2code = {
+CHAR2CODE = {
     "A": ".-",
     "B": "-...",
     "C": "-.-.",
@@ -43,29 +46,31 @@ morse_char2code = {
     ",": "--..--"
 }
 
-morse_code2char = {v: k for k, v in morse_char2code.items()}
+CODE2CHAR = {v: k for k, v in CHAR2CODE.items()}
 
 
 def encode(char):
-    return morse_char2code[char.upper()]
+    """Encode char to morse code """
+    return CHAR2CODE[char.upper()]
 
 
 def decode(code):
-    return morse_code2char[code]
+    """Decode morse code to char """
+    return CODE2CHAR[code]
 
 
-if (__name__ == '__main__'):
-    print(morse_char2code)
-    print(morse_code2char)
+if __name__ == '__main__':
+    print(CHAR2CODE)
+    print(CODE2CHAR)
 
-    msg = "Spam"
-    encodiert = list()
+    MSG = "Spam"
+    ENCODIERT = list()
 
-    for c in msg:
-        encodiert.append(encode(c))
+    for c in MSG:
+        ENCODIERT.append(encode(c))
 
-    print(encodiert)
+    print(ENCODIERT)
 
-    for code in encodiert:
-        print(decode(code), end='')
+    for co in ENCODIERT:
+        print(decode(co), end='')
     print()

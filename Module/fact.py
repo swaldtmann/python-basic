@@ -4,6 +4,7 @@
 Author:
 """
 
+
 def fact(n):
     """ Fakultät des Parameter n
     """
