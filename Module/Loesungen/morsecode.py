@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-morse = {
+morse_char2code = {
     "A": ".-",
     "B": "-...",
     "C": "-.-.",
@@ -43,5 +43,29 @@ morse = {
     ",": "--..--"
 }
 
+morse_code2char = {v: k for k, v in morse_char2code.items()}
+
+
+def encode(char):
+    return morse_char2code[char.upper()]
+
+
+def decode(code):
+    return morse_code2char[code]
+
+
 if (__name__ == '__main__'):
-    print(morse)
+    print(morse_char2code)
+    print(morse_code2char)
+
+    msg = "Spam"
+    encodiert = list()
+
+    for c in msg:
+        encodiert.append(encode(c))
+
+    print(encodiert)
+
+    for code in encodiert:
+        print(decode(code), end='')
+    print()
